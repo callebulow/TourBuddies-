@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Oswald:wght@400;600;700&display=swap');
+
+html {
+    font-size: 10px;
+    height: 100vh;
+}
+body {
+    background-color: #def8d6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* --------------------Header------------------ */
+#header {
+    background-color: #ffffff;
+    color: #004C74;
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px #0003;  
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    grid-row: 1/2;
+    grid-column: 1/4;  
+    z-index: 1000;
+    flex-shrink: 0;
+}
+/* ---------------- MENY ---------------- */
+
+#meny {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    
+}
+
+#titel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 15rem;
+    
+}
+
+/* -------------------- MENY SLUT ---------------*/
+
+
+/* --------------------Header slut------------------ */
+
+
+
+
+
+/* -----------------Content---------------- */
+
+
+
+#content {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+#bildHem {
+    width: 100%;
+    height: 86vh;
+    background-image: url(bakgrundgolfkopia.jpg);
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 6px #0003;
+}
+.textRuta {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 60vh;
+    /* border: double; */
+    justify-content: space-around;
+    margin: auto;
+}
+.intro {
+    margin: 0;
+    font-size: 8rem;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #0003;
+    height: fit-content;
+    padding: 0;
+    /* border: double; */
+}
+
+.text {
+    font-size: 4rem;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #0003;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    /* border: double; */
+}
+
+#inloggning {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4vw;
+    /* border-style: dotted; */
+}
+#slogan {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    color: #004C74;
+    width: fit-content;
+    height: fit-content;
+    text-shadow: 0 4px 6px #0003;
+}
+#förhandstitt {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 8rem;
+}
+
+
+/*----------------  LEADERBOARD --------------- */
+
+.leaderboard {
+    width: 40rem;
+    height: fit-content;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px #0003;
+    padding-bottom: 0.5rem;
+}
+.leaderboard-topbar {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #004C74;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+}
+.leaderboard-info {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 6rem 1fr 6rem;
+    grid-template-rows: 100%;
+    grid-row: 1/2;
+    background-color: #026295;
+    height: 2.5rem;
+    margin:0;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    align-items: center;
+}
+.spelare {
+    background-color: #ffffff;
+    color:#004C74;
+    margin: 0;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    counter-reset: spelare-nummer 0;
+    list-style: none;
+    padding: 1rem;
+}
+.spelare-namn {
+    text-align: center;
+    justify-self: center;
+
+}
+.spelare-antal {
+    text-align: center;
+    justify-self: end;
+    font-weight: bold;
+}
+.spelare-ruta {
+    border-bottom: 2px solid #0003;
+    display: grid;
+    grid-template-columns: 6rem 1fr 6rem;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    position: relative;
+    counter-increment: spelare-nummer 1;
+}
+.spelare-ruta::before {
+    content: counter(spelare-nummer) ".";
+    font-weight: bold;
+    justify-self: start;
+}
+.position {
+    justify-self: start;
+}
+.antal {
+    justify-self: end;
+}
+/* ------------- LEADERBOARD SLUT --------------*/
+
+
+
+/* -----------------Content slut---------------- */
+
+
+
+/*------------------ FOOTER ----------------------*/
+
+
+#footer {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #004C74;
+    width: 100%;
+    height: fit-content;
+}
+
+#information {
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+/*------------------ FOOTER SLUT -----------------*/
+
+
+
+/* ------------------- Knappar -------------------- */
+#loggaInKnapp {
+    margin-right: 15rem;
+}
+.menyText {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #004C74;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 14vh;
+    text-shadow: 0 1px 3px #0003;
+}
+.menyText:hover, .loginKnapp:hover, .titelText:hover {
+    color: #0285cb;
+}
+
+.titelText {
+    font-size: 6rem;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+    color: #004C74;
+    text-shadow: 0 1px 6px #0003;
+}
+
+.loginKnapp {
+    width: 17vw;
+    height: 10vh;
+    background-color: #004C74;
+    border-radius: 6px;
+    font-size: 4rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.534);
+    border: none;
+}
+
+
+/* ---------------- DROPDOWN ---------------- */
+
+.dropdown {
+    position: relative; /* för att dropdown-content ska utgå från knappen */
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;                 
+    left: 50%;                
+    transform: translateX(-50%); 
+    background-color: #ffffff;
+    min-width: 140px;
+    border-radius: 0 0 6px 6px ;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 4px #0003;  
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 1rem;
+    color: #004C74;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+
+.dropdown-content a:hover {
+    color: #0285cb;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

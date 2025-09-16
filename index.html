@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourBuddies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+        <div id="meny">
+             
+        <div id="titel">
+            <button class="titelText" id="titelKnapp">TourBuddies</button>
+        </div>
+            <div class="dropdown">
+                <button class="menyText" id="hemKnapp">Hem</button>
+            </div>
+            <div class="dropdown">
+                <button class="menyText">Ligor</button>
+                <div class="dropdown-content">
+                    <a href="#">Mina Ligor</a>
+                    <a href="#">Skapa Liga</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="menyText">Om oss</button>
+            </div>
+            <div class="dropdown">
+                <button class="menyText">Kontakt</button>
+            </div>
+            <div class="dropdown">
+                <button class="menyText" id="loggaInKnapp">Logga in</button>
+            </div>
+        </div>        
+    </div>
+
+    <div id="content">
+        <div id="bildHem">
+            <div class="textRuta">
+                <p class="intro">Tävla mot dina buddies!</p>
+                <p class="text">Logga in eller skapa ett konto för att börja.</p>
+                <div id="inloggning">
+                        <button class="loginKnapp" id="loggaInKnapp2">Logga in</button>
+                        <button class="loginKnapp" id="skapaKontoKnapp">Skapa konto</button>
+                    </div>
+                </div>
+
+            </div>
+
+        <div>
+            <p id="slogan">Spela som en amatör, tävla som ett proffs!</p>
+        </div>
+
+        <div id="förhandstitt">
+            <div class="leaderboard">
+                <div class="leaderboard-topbar">
+                    <div class="leaderboard-titel">Slag per runda</div>
+                        <div class="leaderboard-info">
+                            <p class="position">Position</p>
+                            <p>Namn</p>
+                            <p class="antal">Antal</p>
+                        </div>
+                </div>
+                <ol class="spelare">
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Rory McIlroy</span>
+                        <span class="spelare-antal">68</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jon Rahm</span>
+                        <span class="spelare-antal">69</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Scottie Scheffler</span>
+                        <span class="spelare-antal">69</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Patrick Cantlay</span>
+                        <span class="spelare-antal">70</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Viktor Hovland</span>
+                        <span class="spelare-antal">70</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Nelly Korda</span>
+                        <span class="spelare-antal">71</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jordan Spieth</span>
+                        <span class="spelare-antal">71</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Collin Morikawa</span>
+                        <span class="spelare-antal">72</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Brooke Henderson</span>
+                        <span class="spelare-antal">72</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Hideki Matsuyama</span>
+                        <span class="spelare-antal">73</span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="leaderboard">
+                <div class="leaderboard-topbar">
+                    <div class="leaderboard-titel">Birdies per runda</div>
+                    <div class="leaderboard-info">
+                        <p class="position">Position</p>
+                        <p>Namn</p>
+                        <p class="antal">Antal</p>
+                    </div>
+                </div>
+                <ol class="spelare">
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Rory McIlroy</span>
+                        <span class="spelare-antal">5.2</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jon Rahm</span>
+                        <span class="spelare-antal">5.1</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Scottie Scheffler</span>
+                        <span class="spelare-antal">4.8</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Patrick Cantlay</span>
+                        <span class="spelare-antal">4.7</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Viktor Hovland</span>
+                        <span class="spelare-antal">4.5</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Nelly Korda</span>
+                        <span class="spelare-antal">4.4</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jordan Spieth</span>
+                        <span class="spelare-antal">4.3</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Collin Morikawa</span>
+                        <span class="spelare-antal">4.2</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Brooke Henderson</span>
+                        <span class="spelare-antal">4.1</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Hideki Matsuyama</span>
+                        <span class="spelare-antal">4.0</span>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="leaderboard">
+                <div class="leaderboard-topbar">
+                    <div class="leaderboard-titel">Spelade rundor</div>
+                    <div class="leaderboard-info">
+                        <p class="position">Position</p>
+                        <p>Namn</p>
+                        <p class="antal">Antal</p>
+                    </div>
+                </div>
+                <ol class="spelare">
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jon Rahm</span>
+                        <span class="spelare-antal">50</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Patrick Cantlay</span>
+                        <span class="spelare-antal">48</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Scottie Scheffler</span>
+                        <span class="spelare-antal">47</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Viktor Hovland</span>
+                        <span class="spelare-antal">46</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Collin Morikawa</span>
+                        <span class="spelare-antal">44</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Jordan Spieth</span>
+                        <span class="spelare-antal">42</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Rory McIlroy</span>
+                        <span class="spelare-antal">40</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Hideki Matsuyama</span>
+                        <span class="spelare-antal">39</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Nelly Korda</span>
+                        <span class="spelare-antal">35</span>
+                    </li>
+                    <li class="spelare-ruta">
+                        <span class="spelare-namn">Brooke Henderson</span>
+                        <span class="spelare-antal">30</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="information">
+            <h4>Information</h4>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
