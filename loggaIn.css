@@ -24,7 +24,7 @@ body {
     background-color: #ffffff;
     color: #004C74;
     height: 14vh;
-    width: 100%;
+    width: 99vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    
+    gap: 5vw;
+    margin-inline-end: 5vw;
 }
 
 #titel {
@@ -52,23 +53,12 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 15rem;
-    text-shadow: 0 1px 6px #0003;
+    margin-left: 10vw;
+    width: fit-content;
 }
 
-/* -------------------- MENY SLUT ---------------*/
-
-
-/* --------------------Header slut------------------ */
-
-/* ------------------- Knappar -------------------- */
-#loggaInKnapp {
-    margin-right: 15rem;
-}
 .menyText {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    font-size: 2rem;
+    font-size: 1.4vw;
     background-color: transparent;
     border: none;
     color: #004C74;
@@ -77,8 +67,17 @@ body {
     font-weight: 400;
     font-style: normal;
     height: 14vh;
+    width: fit-content;
     text-shadow: 0 1px 3px #0003;
 }
+
+/* -------------------- MENY SLUT ---------------*/
+
+
+/* --------------------Header slut------------------ */
+
+/* ------------------- Knappar -------------------- */
+
 .menyText:hover, .loginKnapp:hover, .titelText:hover {
     color: #0285cb;
 }
